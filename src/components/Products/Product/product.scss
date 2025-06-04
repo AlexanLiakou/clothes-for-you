@@ -1,0 +1,60 @@
+.card-container {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+
+    .card-body {
+        background-color: white;
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .img-container {
+            padding-top: 20px;
+            text-align: center;
+            img {
+                height: 150px;
+                width: auto;
+            }
+        }
+
+        .text-container {
+            padding: 0px 20px 20px 20px;
+            color: #040059;
+
+            .title-container {
+                max-width: 370px;
+                
+                h5 {
+                    margin-bottom: 10px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+                
+            }
+
+            .product-description {
+                margin-bottom: 10px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .button-container {
+        background-color: #d0e4ff;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        
+        button {
+            background-color: #040059;
+            border-radius: 5px;
+            color: white;
+            padding: 10px;
+        }
+    }
+}
