@@ -53,13 +53,6 @@
         display: flex;
         justify-content: space-between;
         padding: 20px;
-        
-        button {
-            background-color: #040059;
-            border-radius: 5px;
-            color: white;
-            padding: 10px;
-        }
 
         @media (max-width: 1240px) {
             flex-direction: column;

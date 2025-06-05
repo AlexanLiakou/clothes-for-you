@@ -1,0 +1,43 @@
+.navbar-brand,
+.nav-link {
+   color: #040059 !important;
+   font-weight: bold;
+}
+
+.navbar-brand,
+.navbar-brand > svg {
+    @media (max-width: 500px) {
+        width: 79%;
+    } 
+}
+
+.nav-link {
+    @media (max-width: 990px) {
+        text-align: center;
+    } 
+}
+
+.navbar-toggler {
+    border: none !important;
+    color: #040059;
+    &:focus {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.navbar-text {
+    @media (max-width: 990px) {
+        display: flex;
+        justify-content: center;
+    } 
+}
+
+.navbar-collapse {
+    transition: none !important;
+}
+
+.show {
+    height: 100vh;
+}

@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import Product from "./Product/Product";
+import {ProductInterface} from '../../interfaces'
 import './products.scss';
 
 const Products = () => {
 
-const [products, setProducts] = useState([]);
+const [products, setProducts] = useState<ProductInterface[]>([]);
 
 const fetchProducts = () => {
     fetch('https://fakestoreapi.com/products')
@@ -22,7 +23,7 @@ useEffect (() => {
             {
                 products && products.map((product) => {
                     return (
-                        <Product key={product.id} image={product.image} title={product.title} description={product.description} price={product.price} ></Product>
+                        <Product key={product.id} image={product.image} title={product.title} description={product.description} price={product.price} id={product.id} ></Product>
                     )
                 })
             }

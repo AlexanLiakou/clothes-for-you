@@ -1,6 +1,8 @@
 import './product.scss';
+import {ProductInterface} from '../../../interfaces';
+import MainButton from '../../UI/Buttons/MainButton/MainButton';
 
-const Product = ({image, title, price, description}) => {
+const Product = ({image, title, price, description} : ProductInterface) => {
     return (
         <div className="col-sm-12 col-md-6 col-lg-3 card-container h-100">
             <div className="card-body">
@@ -12,8 +14,8 @@ const Product = ({image, title, price, description}) => {
                 </div>
             </div>
             <div className="button-container">
-                <button>View Product</button>
-                <button>Add To Cart</button>
+                <MainButton label={'View Product'} onClick={()=> console.log('Single View')}/>
+                <MainButton label={'Add To Cart'} onClick={()=> console.log('Added to Cart')}/>
             </div>
         </div>                   
     );
