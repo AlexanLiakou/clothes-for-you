@@ -2,7 +2,7 @@ import './product.scss';
 
 const Product = ({image, title, price, description}) => {
     return (
-        <div className="col-md-3 card-container h-100">
+        <div className="col-sm-12 col-md-6 col-lg-3 card-container h-100">
             <div className="card-body">
                 <div className="img-container"><img src={image} /></div>
                 <div className="text-container">

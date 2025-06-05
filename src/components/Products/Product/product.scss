@@ -16,6 +16,10 @@
             img {
                 height: 150px;
                 width: auto;
+
+                @media (max-width: 1240px) {
+                    height: 100px;
+                } 
             }
         }
 
@@ -56,5 +60,10 @@
             color: white;
             padding: 10px;
         }
+
+        @media (max-width: 1240px) {
+            flex-direction: column;
+            gap: 10px;
+        }   
     }
 }
