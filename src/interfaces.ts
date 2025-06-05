@@ -11,7 +11,7 @@ export interface ProductInterface {
 export interface MainButtonInterface {
   label?: string,  
   customClass?: string,
-  onClick?: () => void,
+  onClick: () => void,
   icon?: React.ReactNode,
   children?: React.ReactNode,
 }

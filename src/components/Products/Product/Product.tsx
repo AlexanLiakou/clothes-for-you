@@ -4,7 +4,7 @@ import MainButton from '../../UI/Buttons/MainButton/MainButton';
 
 const Product = ({image, title, price, description} : ProductInterface) => {
     return (
-        <div className="col-sm-12 col-md-6 col-lg-3 card-container h-100">
+        <div className="col-sm-12 col-md-6 col-lg-4 card-container h-100">
             <div className="card-body">
                 <div className="img-container"><img src={image} /></div>
                 <div className="text-container">

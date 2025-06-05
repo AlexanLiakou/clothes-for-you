@@ -2,6 +2,10 @@
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
+    border: 1px solid #e6e2e2;
+    border-radius: 5px;
+    max-width: 600px;
+    padding: 0;
 
     .card-body {
         background-color: white;

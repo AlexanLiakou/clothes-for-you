@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -10,6 +10,9 @@ import './nav-menu.scss';
 
 
 const Navmenu = () => {
+
+  const navigate = useNavigate();
+
   return (
   <Navbar expand="lg" className="bg-body-tertiary">
     <Container fluid>
@@ -21,10 +24,10 @@ const Navmenu = () => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link to="/" as={Link}>Products</Nav.Link>
+            <Nav.Link to="/products" as={Link}>Products</Nav.Link>
           </Nav>
           <Navbar.Text>
-            <MainButton customClass={'cart-btn'} icon={<IoCart/>}><Nav.Link to="/cart" as={Link}>My Bag</Nav.Link></MainButton>
+            <MainButton onClick={() => navigate('/cart')} customClass={'cart-btn'} icon={<IoCart/>}></MainButton>
           </Navbar.Text>
         </Navbar.Collapse>
     </Container>
