@@ -1,0 +1,21 @@
+.cart-btn {
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .divider,
+    .counter {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .counter {
+      padding-top: 3px
+    }
+  }

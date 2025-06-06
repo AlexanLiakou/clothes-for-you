@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { IoCart } from "react-icons/io5";
-import MainButton from '../UI/Buttons/MainButton/MainButton';
+import CartButton from '../UI/Buttons/CartButton/CartButton';
 import Logo from '../../Logo';
 import './nav-menu.scss';
  
@@ -27,7 +27,7 @@ const Navmenu = () => {
             <Nav.Link to="/products" as={Link}>Products</Nav.Link>
           </Nav>
           <Navbar.Text>
-            <MainButton onClick={() => navigate('/cart')} customClass={'cart-btn'} icon={<IoCart/>}></MainButton>
+            <CartButton onClick={() => navigate('/cart')} customClass={'main-btn cart-btn'} label={'0'} icon={<IoCart/>}></CartButton>
           </Navbar.Text>
         </Navbar.Collapse>
     </Container>

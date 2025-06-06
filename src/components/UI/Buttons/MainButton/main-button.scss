@@ -1,14 +1,7 @@
-button {
+.main-btn {
     background-color: #040059;
+    color: #f8f9fa;
+    border: none;
     border-radius: 5px;
-    color: white;
     padding: 10px;
-}
-
-.cart-btn {
-    min-width: 100px;
-    svg {
-        width: 25px;
-        height: 25px;
-    }
 }
